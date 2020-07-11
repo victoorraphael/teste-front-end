@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continentes e países</title>
+    <!-- Font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="selection">
+        <div class="field">
+          <div class="control has-icons-left">
+            <div class="select is-medium is-info">
+              <select name="continents" id="continents" onchange="showCountries()">
+                <option disable selected>Selecione</option>
+              </select>
+            </div>
+            <div class="icon is-small is-left">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control has-icons-left">
+            <div class="select is-medium is-info">
+              <select name="countries" id="countries" onchange="getDetails()" >
+              </select>
+            </div>
+            <div class="icon is-small is-left">
+              <i class="fas fa-globe"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img id="flag-country" alt="flag">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4"></p>
+              <p class="subtitle is-6"></p>
+            </div>
+          </div>
+          <div class="content">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script></script>
+  </body>
+</html>

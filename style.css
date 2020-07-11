@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  text-transform: capitalize;
+}
+
+select{
+  width: 330px;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.card{
+  display: none;
+}
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  padding: 2%;
+}
+
+.selection{
+  margin-right: 50px;
+}
+
+@media (max-width:320px){
+  .hero{
+    padding: 10% 0;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .card{
+    margin: 0 auto;
+  }
+
+}
+

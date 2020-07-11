@@ -1,0 +1,9 @@
+1 - build a basic html
+2 - has to be mobile-first
+2a - Don't forget charset!
+3 - title is "Continentes e Países"
+4 - Should contain two selects: 1 for continents and other for countries
+5 - when user get a continent, the countries select automatically loads the contries from that continent
+6 - when page loads, the select can show the first continent selected
+7 - the data source is http://v2d77.mocklab.io/countries
+8 - Let the page as good looking as possible ( Try https://bulma.io/documentation/overview/start/ )
